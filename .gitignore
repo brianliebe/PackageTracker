@@ -1,0 +1,5 @@
+*.exe
+*.pdb
+packages/*
+PackageTracker/bin/*
+PackageTracker/obj/*
