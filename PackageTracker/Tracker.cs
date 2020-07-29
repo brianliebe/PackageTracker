@@ -23,7 +23,7 @@ namespace PackageTracker
             {
                 foreach (string trackingNumber in textTrackingNumber.Text.Trim().Split(' '))
                 {
-                    PackageInformation info;
+                    PackageInfo info;
 
                     switch (trackingNumber.Length)
                     {

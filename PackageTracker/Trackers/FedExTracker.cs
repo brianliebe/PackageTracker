@@ -7,11 +7,11 @@ namespace PackageTracker
 {
     public class FedExTracker : ITracker
     {
-        public PackageInformation PackageInfo { get; set; }
+        public PackageInfo PackageInfo { get; set; }
 
         public FedExTracker(string trackingNumber)
         {
-            PackageInfo = new PackageInformation(trackingNumber, "FedEx");
+            PackageInfo = new PackageInfo(trackingNumber, "FedEx");
         }
     }
 }

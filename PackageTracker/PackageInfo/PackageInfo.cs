@@ -7,20 +7,20 @@ using System.Text;
 
 namespace PackageTracker
 {
-    public class PackageInformation
+    public class PackageInfo
     {
         public string TrackingNumber { get; private set; }
-        public LocationInformation LastLocation { get; set; }
+        public LocationInfo LastLocation { get; set; }
         public string Service { get; set; }
 
-        public PackageInformation(string trackingNumber, string service)
+        public PackageInfo(string trackingNumber, string service)
         {
             TrackingNumber = trackingNumber;
             Service = service;
         }
     }
 
-    public class LocationInformation
+    public class LocationInfo
     {
         public string City { get; set; }
         public string State { get; set; }

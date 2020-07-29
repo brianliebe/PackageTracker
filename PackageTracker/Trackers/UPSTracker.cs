@@ -11,12 +11,12 @@ namespace PackageTracker
 {
     public class UPSTracker : ITracker
     {
-        public PackageInformation PackageInfo { get; private set; }
+        public PackageInfo PackageInfo { get; private set; }
 
         public UPSTracker(string trackingNumber)
         {
-            PackageInfo = new PackageInformation(trackingNumber, "UPS");
-            LocationInformation lastLocation = new LocationInformation();
+            PackageInfo = new PackageInfo(trackingNumber, "UPS");
+            LocationInfo lastLocation = new LocationInfo();
 
             string location = @"C:\Users\brian\source\files\PackageTracker\ups_credentials.json";
             dynamic credentials = JsonConvert.DeserializeObject(File.ReadAllText(location));
